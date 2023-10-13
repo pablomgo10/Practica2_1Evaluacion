@@ -91,3 +91,8 @@ p a:hover {
     color: #942C0B;
     border-bottom: solid 1px #942C0B;
 }
+
+header h1 {
+    text-align: center;
+    display: inline-block;
+}
