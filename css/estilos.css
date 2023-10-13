@@ -21,6 +21,17 @@ footer ul li {
     font-size: 1.1em;
 }
 
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #6BDEC8;
+    border-bottom: solid 2px;
+}
+
 #index {
     max-width: 100vw;
     max-height: 100vh;
@@ -67,13 +78,16 @@ footer ul li {
     top: -1em;
 }
 
-a {
+
+
+p a {
     text-decoration: none;
-    color: white;
+    color: #942C0B;
+    border-bottom: dotted 1px #942C0B;
 }
 
-a:hover {
+p a:hover {
     text-decoration: none;
-    color: #6BDEC8;
-    border-bottom: solid 2px;
+    color: #942C0B;
+    border-bottom: solid 1px #942C0B;
 }
