@@ -5,28 +5,51 @@
 
 * {
     font-family: FontGoogle;
+    margin: 0 auto;
 }
 
-footer p {
+main{
+    text-align: left;
+    width: 70%;
+}
+
+article > footer{
+    margin-top: 2%;
+    font-size: 10.5px;
+ }
+
+ article > footer > a{
+    text-decoration: none;
+    color: #942C0B;
+    border-bottom: 1px dotted currentColor;
+ }
+
+ article > footer > a:hover{
+    text-decoration: none;
+    color: #942C0B;
+    border-bottom: 1px solid currentColor;
+ }
+
+#footer_index > p {
     font-size: 0.8em;
 }
 
-footer ul {
+#footer_index > ul {
     margin-bottom: 1%;
 }
 
-footer ul li {
+#footer_index > ul > li {
     display: inline;
     padding-right: 1em;
     font-size: 1.1em;
 }
 
-footer a {
+#footer_index a {
     text-decoration: none;
     color: white;
 }
 
-footer a:hover {
+#footer_index a:hover {
     text-decoration: none;
     color: #6BDEC8;
     border-bottom: solid 2px;
@@ -59,6 +82,8 @@ footer a:hover {
 }
 
 #index main {
+    width: 100%;
+    text-align: center;
     margin-top: 10%;
     margin-bottom: 13%;
 }
@@ -91,8 +116,117 @@ p a:hover {
     color: #942C0B;
     border-bottom: solid 1px #942C0B;
 }
-
-header h1 {
-    text-align: center;
-    display: inline-block;
+body > header{
+    background-color: #000000;
+    padding-top: 2%;
+    padding-bottom: 3%;
 }
+
+body > header > ul{
+    list-style: none;
+    text-align: center;
+}
+
+body > header > ul > li{
+    color: #FFFFFF;
+    display: inline;
+    font-size: 1.7em;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+body > header > ul > li > img{
+    width: 3vh;
+}
+
+nav > ul{
+    margin-top: 1%;
+    list-style: none;
+    text-align: center;
+    word-spacing: 50px;
+}
+ nav > ul > li{
+    display: inline;
+ }
+
+ nav > ul > li > a{
+    color: #FFFFFF;
+    text-decoration: none;
+ }
+
+ nav > ul > li > a:hover{
+    color: #6BDEC8;
+    border-bottom: solid 2px currentColor;
+ }
+
+ article > header > h1{
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    font-weight: 700;
+ }
+
+ .video_youtube > iframe{
+    width: 93vh;
+    margin-top: 5%;
+    margin-left: 13%;
+ }
+
+ .video_youtube > figcaption{
+    margin-left: 13%;
+    font-size: 0.7em;
+ }
+
+ article > section{
+    margin-top: 3%;
+ }
+ 
+ article > section >p{
+    margin-top: 2%;
+    font-weight: 400;
+ }
+
+ section > dl > dt{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: 4%;
+    font-weight: 700;
+ }
+
+ section > dl > dd{
+    margin-left: 7%;
+ }
+
+ body > footer{
+    margin-top: 5%;
+    background-color: #000000;
+ }
+
+ body > footer > p{
+    color: #FFFFFF;
+    padding-bottom: 3%;
+ }
+
+ footer > ul{
+    text-align: left;
+    width: 70%;
+    border: white 1px solid;
+    padding-top: 1%;
+    margin-bottom: 1%;
+    list-style: none;
+ }
+
+ footer > ul >li{
+    display: inline;
+    margin-right: 50px;
+ }
+
+ footer a{
+    color: #FFFFFF;
+    text-decoration: none;
+ }
+
+ 
+
+ 
+
