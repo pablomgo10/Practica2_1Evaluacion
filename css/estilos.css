@@ -197,35 +197,43 @@ nav > ul{
     margin-left: 7%;
  }
 
- body > footer{
+ body > footer:not(#footer_index){
     margin-top: 5%;
     background-color: #000000;
  }
 
- body > footer > p{
+ body > footer:not(#footer_index) > p{
     color: #FFFFFF;
     padding-bottom: 3%;
+    width: 70%;
  }
 
- footer > ul{
+ body > footer:not(#footer_index) > ul{
     text-align: left;
-    width: 70%;
-    border: white 1px solid;
+    width: 73%;
     padding-top: 1%;
     margin-bottom: 1%;
     list-style: none;
  }
 
- footer > ul >li{
+ body > footer:not(#footer_index) > ul >li{
     display: inline;
     margin-right: 50px;
  }
 
- footer a{
+ body > footer:not(#footer_index) a{
     color: #FFFFFF;
     text-decoration: none;
  }
 
+ table{
+    text-align: center;
+    border: 1px solid black;
+ }
+
+ td{
+    border-bottom: 1px solid black;
+ }
  
 
  
