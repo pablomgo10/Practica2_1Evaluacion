@@ -8,6 +8,88 @@
     <title>Inscripcion</title>
 </head>
 <body>
-    
+    <header>
+        <ul>
+            <li>
+                <img src="./img/isologo-taller.png" alt="logo_taller">
+            </li>
+            <li>el taller</li>
+        </ul>
+        <nav>
+            <ul>
+                <li><a href="que-es-la-ceramica.html">CERÁMICA</a></li>
+                <li><a href="cursos.html">CURSOS</a></li>
+                <li><a href="inscripcion-cursos.html">INSCRIPCIÓN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h1>Inscripción a los cursos</h1>
+                <p>Los campos marcados con * son obligatorios</p>
+            </header><section>
+            <form id="formulario_cursos">
+                <fieldset>
+                <legend><strong>Detalles de la inscripción</strong></legend>
+                <label for="nombre">Nombre *</label>
+                <label for="apellidos">Apellidos *</label>
+                <input type="text" name="nombre">
+                <input type="text" name="apellidos">
+
+                <label for="correo">Correo electrónico *</label>
+                <label for="telefono">Teléfono *</label>
+                <input type="email" name="correo">
+                <input type="number" name="telefono">
+
+                <label for="nacimiento">Fecha nacimiento *</label>
+                <label for="curso">Curso *</label>
+                <input type="date" name="nacimiento">
+                <input list="cursos" id="curso">
+                <datalist id="cursos">
+                    <option value="Selecciona el curso" selected></option>
+                    <option value="Torno"></option>
+                    <option value="Cerámica"></option>
+                    <option value="Modelado"></option>
+                    <option value="Esmaltes"></option>
+                    <option value="Joyería Cerámica"></option>
+                </datalist>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Otras informaciones</strong></legend>
+                <fieldset>
+                    <legend><strong>¿Has hecho otros cursos con nosotros? *</strong></legend>
+                <input type="radio" id="true" name="experiencia" value="si">
+                <label for="experiencia">Sí</label><br>
+                <input type="radio" id="false" name="experiencia" value="no">
+                <label for="experiencia">No</label>
+            </fieldset>
+            <label>¿Quieres comentar o preguntar algo?</label>
+            <textarea name="comentar" id="formulario_cursos">Enter text here...</textarea>
+            <fieldset>
+                <legend><strong>Elige un método de pago *</strong></legend>
+                <input type="radio" id="transferencia" name="pago" value="transferencia">
+                <label for="pago">Transferencia</label><br>
+                <input type="radio" id="tarjeta" name="pago" value="tarjeta">
+                <label for="pago">Tarjeta de débito / crédito</label><br>
+                <input type="radio" id="efectivo" name="pago" value="efectivo">
+                <label for="pago">En efectivo</label>
+            </fieldset>
+            </fieldset>
+            </form>
+        </section>
+        </article>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">Aviso legal</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Política de cookies</a></li>
+        </ul>
+        <p>
+            2023 © Pablo Pastor Alfaro
+        </p>
+    </footer>
 </body>
 </html>

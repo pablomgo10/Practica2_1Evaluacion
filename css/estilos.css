@@ -44,7 +44,7 @@ article > footer{
     font-size: 1.1em;
 }
 
-#footer_index a {
+/*#footer_index a {
     text-decoration: none;
     color: white;
 }
@@ -237,13 +237,14 @@ nav > ul{
     display: inline;
     margin-right: 50px;
  }
+ 
 
- body > footer:not(#footer_index) a{
+ body > footer a{
     color: #FFFFFF;
     text-decoration: none;
  }
 
- body > footer:not(#footer_index) a:hover{
+ body > footer a:hover{
     color: #6BDEC8;
     text-decoration: none;
     border-bottom: 2px solid currentColor;
@@ -297,7 +298,10 @@ td{
     margin-right: 9%;
     line-height: 40px;
     font-size: 1.8em;
-    
+ }
+
+ fieldset > legend{
+    text-align: left;
  }
  
  
