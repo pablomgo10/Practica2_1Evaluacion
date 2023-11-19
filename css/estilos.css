@@ -5,12 +5,13 @@
 
 * {
     font-family: FontGoogle;
-    margin: 0 auto;
+    margin: 0;
 }
 
 main{
     text-align: left;
     width: 70%;
+    margin: 0 auto;
 }
 
 article > footer{
@@ -44,7 +45,7 @@ article > footer{
     font-size: 1.1em;
 }
 
-/*#footer_index a {
+#footer_index a {
     text-decoration: none;
     color: white;
 }
@@ -105,13 +106,13 @@ article > footer{
 
 
 
-p a {
+p a, label a {
     text-decoration: none;
     color: #942C0B;
     border-bottom: dotted 1px #942C0B;
 }
 
-p a:hover {
+p a:hover, label a:hover {
     text-decoration: none;
     color: #942C0B;
     border-bottom: solid 1px #942C0B;
@@ -223,6 +224,7 @@ nav > ul{
     color: #FFFFFF;
     padding-bottom: 3%;
     width: 70%;
+    margin: 30px auto;
  }
 
  body > footer:not(#footer_index) > ul{
@@ -231,6 +233,7 @@ nav > ul{
     padding-top: 1%;
     margin-bottom: 1%;
     list-style: none;
+    margin: 0 auto;
  }
 
  body > footer:not(#footer_index) > ul >li{
@@ -250,7 +253,7 @@ nav > ul{
     border-bottom: 2px solid currentColor;
  }
 
- table{
+ table:not(#tabla_formulario){
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     border-collapse: collapse;
@@ -299,12 +302,56 @@ td{
     line-height: 40px;
     font-size: 1.8em;
  }
-
- fieldset > legend{
-    text-align: left;
+ 
+#tabla_formulario{
+    width: 100%;
  }
- 
- 
+ #tabla_formulario td{
+   border: 0px;
+   font-size: 1em;
+ }
 
- 
+ #tabla_formulario input{
+   width: 97%;
+   height: 25px;
+ }
+
+ fieldset{
+   margin-bottom: 3%;
+ }
+
+ fieldset > fieldset
+ {
+   margin-top: 30px;
+   margin-bottom: 20px;
+ }
+
+fieldset > fieldset> *{
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+
+ textarea{
+   margin-top: 2%;
+   width: 99%;
+   height: 200px;
+ }
+
+ #transferencia, #tarjeta, #efectivo{
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+
+ #inscribirse{
+   margin-top: 2%;
+   color: #FFFFFF;
+   background-color: #942C0B;
+   font-size: 1em;
+   width: 130px;
+   height: 50px;
+ }
+
+ #formulario_cursos, #header_formulario{
+   margin: 0 6% 0 6%;
+ }
 

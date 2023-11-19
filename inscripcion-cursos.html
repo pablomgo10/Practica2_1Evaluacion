@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Inscripcion</title>
 </head>
+
 <body>
     <header>
         <ul>
@@ -25,60 +27,93 @@
     </header>
     <main>
         <article>
-            <header>
+            <header id="header_formulario">
                 <h1>Inscripción a los cursos</h1>
                 <p>Los campos marcados con * son obligatorios</p>
-            </header><section>
-            <form id="formulario_cursos">
-                <fieldset>
-                <legend><strong>Detalles de la inscripción</strong></legend>
-                <label for="nombre">Nombre *</label>
-                <label for="apellidos">Apellidos *</label>
-                <input type="text" name="nombre">
-                <input type="text" name="apellidos">
+            </header>
+            <section>
+                <form id="formulario_cursos" action="#" method="post">
 
-                <label for="correo">Correo electrónico *</label>
-                <label for="telefono">Teléfono *</label>
-                <input type="email" name="correo">
-                <input type="number" name="telefono">
+                    <fieldset>
+                        <legend><strong>Detalles de la inscripción</strong></legend>
+                        <table id="tabla_formulario">
+                            <tbody>
+                                <tr>
+                                    <td>Nombre *</td>
+                                    <td>Apellidos *</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="nombre" id="inputNombre"></td>
+                                    <td><input type="text" name="apellidos" id="inputApellidos"></td>
+                                </tr>
 
-                <label for="nacimiento">Fecha nacimiento *</label>
-                <label for="curso">Curso *</label>
-                <input type="date" name="nacimiento">
-                <input list="cursos" id="curso">
-                <datalist id="cursos">
-                    <option value="Selecciona el curso" selected></option>
-                    <option value="Torno"></option>
-                    <option value="Cerámica"></option>
-                    <option value="Modelado"></option>
-                    <option value="Esmaltes"></option>
-                    <option value="Joyería Cerámica"></option>
-                </datalist>
-            </fieldset>
+                                <tr>
+                                    <td>Correo electrónico *</td>
+                                    <td>Teléfono *</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="email" name="correo"></td>
+                                    <td><input type="number" name="telefono"></td>
+                                </tr>
+                                <tr>
+                                    <td>Fecha nacimiento *</td>
+                                    <td>Curso *</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="date" name="nacimiento"></td>
+                                    <td>
+                                        <input list="cursos" id="curso" placeholder="Selecciona el curso">
+                                        <datalist id="cursos">
+                                            <option value="Torno"></option>
+                                            <option value="Cerámica"></option>
+                                            <option value="Modelado"></option>
+                                            <option value="Esmaltes"></option>
+                                            <option value="Joyería Cerámica"></option>
 
-            <fieldset>
-                <legend><strong>Otras informaciones</strong></legend>
-                <fieldset>
-                    <legend><strong>¿Has hecho otros cursos con nosotros? *</strong></legend>
-                <input type="radio" id="true" name="experiencia" value="si">
-                <label for="experiencia">Sí</label><br>
-                <input type="radio" id="false" name="experiencia" value="no">
-                <label for="experiencia">No</label>
-            </fieldset>
-            <label>¿Quieres comentar o preguntar algo?</label>
-            <textarea name="comentar" id="formulario_cursos">Enter text here...</textarea>
-            <fieldset>
-                <legend><strong>Elige un método de pago *</strong></legend>
-                <input type="radio" id="transferencia" name="pago" value="transferencia">
-                <label for="pago">Transferencia</label><br>
-                <input type="radio" id="tarjeta" name="pago" value="tarjeta">
-                <label for="pago">Tarjeta de débito / crédito</label><br>
-                <input type="radio" id="efectivo" name="pago" value="efectivo">
-                <label for="pago">En efectivo</label>
-            </fieldset>
-            </fieldset>
-            </form>
-        </section>
+                                        </datalist>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><strong>Otras informaciones</strong></legend>
+                        <fieldset>
+                            <legend><strong>¿Has hecho otros cursos con nosotros? *</strong></legend>
+                            <input type="radio" id="true" name="experiencia" value="si">
+                            <label id="experienciaSi">Sí</label><br>
+                            <input type="radio" id="false" name="experiencia" value="no">
+                            <label id="experienciaNo">No</label>
+                        </fieldset>
+                        <label>¿Quieres comentar o preguntar algo?</label><br>
+                        <textarea name="comentar" id="textarea_form">Enter text here...</textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><strong>Elige un método de pago *</strong></legend>
+                        <input type="radio" id="transferencia" name="pago" value="transferencia">
+                        <label id="pagoTransferencia">Transferencia</label><br>
+                        <input type="radio" id="tarjeta" name="pago" value="tarjeta">
+                        <label id="pagoTarjeta">Tarjeta de débito / crédito</label><br>
+                        <input type="radio" id="efectivo" name="pago" value="efectivo">
+                        <label id="pagoEfectivo">En efectivo</label>
+                    </fieldset>
+                    <p>
+                        INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>EL TALLER. Finalidades</strong>: recogida de datos para la
+                        inscripción como socio del interesado.<strong> Legitimación</strong>: Consentimiento del interesado.
+                        <strong>Destinatarios</strong>: No están previstas cesiones de datos a terceros, excepto obligación legal.
+                        <strong>Derechos</strong>: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar,
+                        suprimir sus datos y otros derechos dirigiéndose a <a href="mailto:info@eltaller.es">info@eltaller.es</a>. <strong>Información Adicional</strong>:
+                        Puede ampliar la información en el enlace de <a href="#">Aviso Legal </a>y <a href="#">Política de privacidad</a>.
+                    </p>
+                    <br>
+                    <input type="checkbox" id="legal" name="legal">
+                    <label>He leído y acepto la <a href="#">política de privacidad</a> *</label>
+                    <br>
+                    <input type="submit" value="INSCRÍBEME" id="inscribirse">
+                </form>
+            </section>
         </article>
     </main>
     <footer>
@@ -92,4 +127,5 @@
         </p>
     </footer>
 </body>
+
 </html>
